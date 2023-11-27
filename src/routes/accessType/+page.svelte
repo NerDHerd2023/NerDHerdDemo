@@ -51,7 +51,9 @@
 							</div>
 
 							<div class="flex flex-col items-center justify-between mt-3">
-								<a href="#/usersignup" class="font-medium"> Don't have account? Sign up </a>
+								<a href="/trainersignup" target="_blank" class="font-medium">
+									Don't have account? Sign up
+								</a>
 							</div>
 						</div>
 					</div>
@@ -89,7 +91,9 @@
 							</div>
 
 							<div class="flex flex-col items-center justify-between mt-3">
-								<a href="#/usersignup" class="font-medium"> Don't have account? Sign up </a>
+								<a href="/learnersignup" target="_blank" class="font-medium">
+									Don't have account? Sign up
+								</a>
 							</div>
 						</div>
 					</div>

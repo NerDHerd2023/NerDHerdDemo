@@ -33,20 +33,24 @@
 					<p class="text-center text-2xl font-semibold">Superviser</p>
 					<p class="text-center text-xl font-semibold">CSE, BUET</p>
 					<div class="flex items-center justify-center space-x-4 mt-5">
-						<img
-							src="https://dxpcgmtdvyvcxbaffqmt.supabase.co/storage/v1/object/public/demo/facebook-1-svgrepo-com.svg"
-							alt="Facebook"
-							class="transform transition duration-300 hover:rotate-12 hover:scale-110"
-							width={30}
-							height={30}
-						/>
-						<img
-							src="https://dxpcgmtdvyvcxbaffqmt.supabase.co/storage/v1/object/public/demo/GMail%20New%20Icon.svg"
-							alt="Gmail"
-							class="transform transition duration-300 hover:rotate-12 hover:scale-110"
-							width={35}
-							height={35}
-						/>
+						<a href="https://www.facebook.com/r.square.es" target="_blank">
+							<img
+								src="https://dxpcgmtdvyvcxbaffqmt.supabase.co/storage/v1/object/public/demo/facebook-1-svgrepo-com.svg"
+								alt="Facebook"
+								class="transform transition duration-300 hover:rotate-12 hover:scale-110"
+								width={30}
+								height={30}
+							/>
+						</a>
+						<a href="mailto:rayhan@cse.buet.ac.bd" target="_blank">
+							<img
+								src="https://dxpcgmtdvyvcxbaffqmt.supabase.co/storage/v1/object/public/demo/GMail%20New%20Icon.svg"
+								alt="Gmail"
+								class="transform transition duration-300 hover:rotate-12 hover:scale-110"
+								width={35}
+								height={35}
+							/>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -61,13 +65,15 @@
 					<p class="text-center text-2xl font-semibold">Founder</p>
 					<p class="text-center text-xl font-semibold">CSE, BUET</p>
 					<div class="flex items-center justify-center space-x-4 mt-5">
-						<img
-							src="https://dxpcgmtdvyvcxbaffqmt.supabase.co/storage/v1/object/public/demo/facebook-1-svgrepo-com.svg"
-							alt="Facebook"
-							class="transform transition duration-300 hover:rotate-12 hover:scale-110"
-							width={30}
-							height={30}
-						/>
+						<a href="https://www.facebook.com/nazmussakib.touhid" target="_blank">
+							<img
+								src="https://dxpcgmtdvyvcxbaffqmt.supabase.co/storage/v1/object/public/demo/facebook-1-svgrepo-com.svg"
+								alt="Facebook"
+								class="transform transition duration-300 hover:rotate-12 hover:scale-110"
+								width={30}
+								height={30}
+							/>
+						</a>
 						<img
 							src="https://dxpcgmtdvyvcxbaffqmt.supabase.co/storage/v1/object/public/demo/github-svgrepo-com.svg"
 							alt="Github"
@@ -82,13 +88,15 @@
 							width={30}
 							height={30}
 						/>
-						<img
-							src="https://dxpcgmtdvyvcxbaffqmt.supabase.co/storage/v1/object/public/demo/GMail%20New%20Icon.svg"
-							alt="Gmail"
-							class="transform transition duration-300 hover:rotate-12 hover:scale-110"
-							width={35}
-							height={35}
-						/>
+						<a href="mailto:sakibbuet2k19@gmail.com" target="_blank">
+							<img
+								src="https://dxpcgmtdvyvcxbaffqmt.supabase.co/storage/v1/object/public/demo/GMail%20New%20Icon.svg"
+								alt="Gmail"
+								class="transform transition duration-300 hover:rotate-12 hover:scale-110"
+								width={35}
+								height={35}
+							/>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -104,13 +112,15 @@
 					<p class="text-center text-2xl font-semibold">Founder</p>
 					<p class="text-center text-xl font-semibold">CSE, BUET</p>
 					<div class="flex items-center justify-center space-x-4 mt-5">
-						<img
-							src="https://dxpcgmtdvyvcxbaffqmt.supabase.co/storage/v1/object/public/demo/facebook-1-svgrepo-com.svg"
-							alt="Facebook"
-							class="transform transition duration-300 hover:rotate-12 hover:scale-110"
-							width={30}
-							height={30}
-						/>
+						<a href="https://www.facebook.com/mdraihansobhan.raihan" target="_blank">
+							<img
+								src="https://dxpcgmtdvyvcxbaffqmt.supabase.co/storage/v1/object/public/demo/facebook-1-svgrepo-com.svg"
+								alt="Facebook"
+								class="transform transition duration-300 hover:rotate-12 hover:scale-110"
+								width={30}
+								height={30}
+							/>
+						</a>
 						<img
 							src="https://dxpcgmtdvyvcxbaffqmt.supabase.co/storage/v1/object/public/demo/github-svgrepo-com.svg"
 							alt="Github"
@@ -125,13 +135,15 @@
 							width={30}
 							height={30}
 						/>
-						<img
-							src="https://dxpcgmtdvyvcxbaffqmt.supabase.co/storage/v1/object/public/demo/GMail%20New%20Icon.svg"
-							alt="Gmail"
-							class="transform transition duration-300 hover:rotate-12 hover:scale-110"
-							width={35}
-							height={35}
-						/>
+						<a href="mailto:raihan.cse.buet@gmail.com" target="_blank">
+							<img
+								src="https://dxpcgmtdvyvcxbaffqmt.supabase.co/storage/v1/object/public/demo/GMail%20New%20Icon.svg"
+								alt="Gmail"
+								class="transform transition duration-300 hover:rotate-12 hover:scale-110"
+								width={35}
+								height={35}
+							/>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -146,13 +158,15 @@
 					<p class="text-center text-2xl font-semibold">Founder</p>
 					<p class="text-center text-xl font-semibold">CSE, BUET</p>
 					<div class="flex items-center justify-center space-x-4 mt-5">
-						<img
-							src="https://dxpcgmtdvyvcxbaffqmt.supabase.co/storage/v1/object/public/demo/facebook-1-svgrepo-com.svg"
-							alt="Facebook"
-							class="transform transition duration-300 hover:rotate-12 hover:scale-110"
-							width={30}
-							height={30}
-						/>
+						<a href="https://www.facebook.com/labidal.nahiyan" target="_blank">
+							<img
+								src="https://dxpcgmtdvyvcxbaffqmt.supabase.co/storage/v1/object/public/demo/facebook-1-svgrepo-com.svg"
+								alt="Facebook"
+								class="transform transition duration-300 hover:rotate-12 hover:scale-110"
+								width={30}
+								height={30}
+							/>
+						</a>
 						<img
 							src="https://dxpcgmtdvyvcxbaffqmt.supabase.co/storage/v1/object/public/demo/github-svgrepo-com.svg"
 							alt="Github"
@@ -167,13 +181,15 @@
 							width={30}
 							height={30}
 						/>
-						<img
-							src="https://dxpcgmtdvyvcxbaffqmt.supabase.co/storage/v1/object/public/demo/GMail%20New%20Icon.svg"
-							alt="Gmail"
-							class="transform transition duration-300 hover:rotate-12 hover:scale-110"
-							width={35}
-							height={35}
-						/>
+						<a href="mailto:labid.nahiyan12@gmail.com" target="_blank">
+							<img
+								src="https://dxpcgmtdvyvcxbaffqmt.supabase.co/storage/v1/object/public/demo/GMail%20New%20Icon.svg"
+								alt="Gmail"
+								class="transform transition duration-300 hover:rotate-12 hover:scale-110"
+								width={35}
+								height={35}
+							/>
+						</a>
 					</div>
 				</div>
 			</div>
