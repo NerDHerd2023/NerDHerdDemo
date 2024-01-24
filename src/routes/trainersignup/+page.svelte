@@ -1,5 +1,6 @@
 <script>
-	import { Stepper, Step, InputChip } from '@skeletonlabs/skeleton';
+	import { Stepper, Step, InputChip, LightSwitch } from '@skeletonlabs/skeleton';
+	import Footer from '$lib/footer.svelte';
 	let step = 1;
 	let formData = {
 		name: '',
@@ -19,6 +20,28 @@
 	};
 </script>
 
+<nav class="fixed top-0 z-50 w-full py-6 backdrop-blur-md">
+	<div class="flex justify-between mx-6">
+		<div class="flex">
+			<img
+				src="https://dxpcgmtdvyvcxbaffqmt.supabase.co/storage/v1/object/public/demo/GeekGlasses.png"
+				class="transform transition duration-300 hover:rotate-12"
+				alt="title"
+				width={60}
+			/>
+			<span class="company-name text-2xl font-extrabold">NerD</span><span
+				class="company-name white-text text-2xl font-extrabold">Herd</span
+			>
+		</div>
+
+		<div class="flex space-x-3">
+			<LightSwitch />
+			<a class="btn btn-sm variant-ghost-surface" href="/about" target="_blank" rel="noreferrer">
+				About us
+			</a>
+		</div>
+	</div>
+</nav>
 <section class="flex flex-col items-center justify-center mt-28">
 	<div class="card p-12 w-1/2">
 		<div class="flex flex-col items-center justify-center mb-8">
@@ -146,16 +169,24 @@
 			<Step>
 				<svelte:fragment slot="header">Teaching Information</svelte:fragment>
 				<label class="label">
-					<span>On a scale from 1 to 10, how much do you love teaching?</span>
-					<input type="range" value="75" max="100" />
+					<span>Tell us Why do you want to become a trainer?</span>
+					<textarea class="textarea" rows="4" placeholder="Your motivation..." />
 				</label>
 				<label class="label">
 					<span>Your Topic of Interest</span>
-					<InputChip bind:value={formData.list} name="chips" placeholder="Enter any value..." />
+					<InputChip
+						bind:value={formData.list}
+						name="chips"
+						placeholder="Press Enter After each topic..."
+					/>
 				</label>
+			</Step>
+			<Step>
+				<svelte:fragment slot="header">Preview for Confirmation</svelte:fragment>
 			</Step>
 		</Stepper>
 	</div>
+	<Footer />
 </section>
 
 <style>
@@ -164,5 +195,14 @@
 		margin: auto;
 		padding: 20px;
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	.white-text {
+		color: red;
+	}
+	.company-name {
+		font-size: 2rem; /* Adjust font size as needed */
+		margin-top: 1rem; /* Add spacing if necessary */
+		font-family: 'CustomFont', sans-serif; /* Use your custom font */
 	}
 </style>

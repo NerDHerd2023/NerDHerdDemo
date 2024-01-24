@@ -1,11 +1,43 @@
 <script>
 	import Footer from '$lib/footer.svelte';
+	import { LightSwitch } from '@skeletonlabs/skeleton';
 
-	let id;
+	export let data;
+	let { supabase } = data;
+	$: ({ supabase } = data);
+
+	let email;
 	let password;
-	function handleSubmit() {}
+	async function handleSubmit() {
+		const { data, error } = await supabase.auth.signInWithPassword({
+			email,
+			password
+		});
+	}
 </script>
 
+<nav class="fixed top-0 z-50 w-full py-6 backdrop-blur-md">
+	<div class="flex justify-between mx-6">
+		<div class="flex">
+			<img
+				src="https://dxpcgmtdvyvcxbaffqmt.supabase.co/storage/v1/object/public/demo/GeekGlasses.png"
+				class="transform transition duration-300 hover:rotate-12"
+				alt="title"
+				width={60}
+			/>
+			<span class="company-name text-2xl font-extrabold">NerD</span><span
+				class="company-name white-text text-2xl font-extrabold">Herd</span
+			>
+		</div>
+
+		<div class="flex space-x-3">
+			<LightSwitch />
+			<a class="btn btn-sm variant-ghost-surface" href="/about" target="_blank" rel="noreferrer">
+				About us
+			</a>
+		</div>
+	</div>
+</nav>
 <div class="container h-full mx-auto flex justify-center items-center">
 	<div class="max-h-screen text-center flex flex-col items-center">
 		<div class="flex card shadow-2xl rounded-xl overflow-hidden max-w-4xl">
@@ -28,7 +60,7 @@
 							<label for="userID" class="sr-only">User ID</label>
 							<input
 								required
-								bind:value={id}
+								bind:value={email}
 								class="input"
 								title="Input (email)"
 								type="email"
@@ -65,11 +97,36 @@
 					</div>
 
 					<div>
-						<button type="submit" class="btn variant-filled-primary"> Sign In </button>
+						<button type="submit" class="btn variant-filled-primary text-xl font-semibold">
+							Sign In
+						</button>
 					</div>
 				</form>
-				<div class="flex flex-col items-center justify-between mt-3">
-					<a href="#/usersignup" class="font-medium"> Don't have account? Sign up </a>
+				<div class="flex flex-col">
+					<button type="button" class="btn variant-filled mt-4">
+						<span
+							><img
+								src="https://dxpcgmtdvyvcxbaffqmt.supabase.co/storage/v1/object/public/demo/google-svgrepo-com.svg"
+								class="transform transition duration-300 hover:rotate-45 hover:scale-110"
+								alt="title"
+								width={25}
+								height={25}
+							/>
+						</span>
+						<span class="text-xl font-semibold">Sign in with Google</span>
+					</button>
+					<button type="button" class="btn variant-filled mt-4">
+						<span
+							><img
+								src="https://dxpcgmtdvyvcxbaffqmt.supabase.co/storage/v1/object/public/demo/discord-icon-svgrepo-com.svg"
+								class="transform transition duration-300 hover:rotate-45 hover:scale-110"
+								alt="title"
+								width={25}
+								height={25}
+							/>
+						</span>
+						<span class="text-xl font-semibold">Sign in with Discord</span>
+					</button>
 				</div>
 			</div>
 		</div>

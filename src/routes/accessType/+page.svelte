@@ -1,9 +1,13 @@
 <script>
+	import { LightSwitch } from '@skeletonlabs/skeleton';
 	import { onMount } from 'svelte';
 	import Footer from '$lib/footer.svelte';
 	let isLoading = true;
 	let id;
 	let password;
+	function handleSignInUser() {
+		window.open('/userlogin', '_blank');
+	}
 	onMount(() => {
 		setTimeout(() => {
 			isLoading = false;
@@ -11,6 +15,28 @@
 	});
 </script>
 
+<nav class="fixed top-0 z-50 w-full py-6 backdrop-blur-md">
+	<div class="flex justify-between mx-6">
+		<div class="flex">
+			<img
+				src="https://dxpcgmtdvyvcxbaffqmt.supabase.co/storage/v1/object/public/demo/GeekGlasses.png"
+				class="transform transition duration-300 hover:rotate-12"
+				alt="title"
+				width={60}
+			/>
+			<span class="company-name text-2xl font-extrabold">NerD</span><span
+				class="company-name white-text text-2xl font-extrabold">Herd</span
+			>
+		</div>
+
+		<div class="flex space-x-3">
+			<LightSwitch />
+			<a class="btn btn-sm variant-ghost-surface" href="/about" target="_blank" rel="noreferrer">
+				About us
+			</a>
+		</div>
+	</div>
+</nav>
 <section class="mt-28">
 	{#if isLoading}
 		<div class="flex space-x-2 justify-center items-center h-screen dark:invert">
@@ -85,7 +111,11 @@
 							</div>
 
 							<div>
-								<button type="submit" class="btn variant-filled-error mt-8 text-xl font-semibold">
+								<button
+									type="submit"
+									class="btn variant-filled-error mt-8 text-xl font-semibold"
+									on:click={handleSignInUser}
+								>
 									Sign In
 								</button>
 							</div>
@@ -105,4 +135,12 @@
 </section>
 
 <style>
+	.white-text {
+		color: red;
+	}
+	.company-name {
+		font-size: 2rem; /* Adjust font size as needed */
+		margin-top: 1rem; /* Add spacing if necessary */
+		font-family: 'CustomFont', sans-serif; /* Use your custom font */
+	}
 </style>

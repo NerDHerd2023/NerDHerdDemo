@@ -1,8 +1,9 @@
 <!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
 <script>
+	import { LightSwitch } from '@skeletonlabs/skeleton';
 	let typingText = '';
 	let typingIndex = 0;
-	
+
 	import Footer from '$lib/footer.svelte';
 
 	function typeText() {
@@ -53,6 +54,28 @@
 	typeText();
 </script>
 
+<nav class="fixed top-0 z-50 w-full py-6 backdrop-blur-md">
+	<div class="flex justify-between mx-6">
+		<div class="flex">
+			<img
+				src="https://dxpcgmtdvyvcxbaffqmt.supabase.co/storage/v1/object/public/demo/GeekGlasses.png"
+				class="transform transition duration-300 hover:rotate-12"
+				alt="title"
+				width={60}
+			/>
+			<span class="company-name text-2xl font-extrabold">NerD</span><span
+				class="company-name white-text text-2xl font-extrabold">Herd</span
+			>
+		</div>
+
+		<div class="flex space-x-3">
+			<LightSwitch />
+			<a class="btn btn-sm variant-ghost-surface" href="/about" target="_blank" rel="noreferrer">
+				About us
+			</a>
+		</div>
+	</div>
+</nav>
 <div class="flex justify-center mt-28 mb-28">
 	<div class="space-y-10 text-center flex flex-col">
 		<div class="flex typing-text">{typingText}</div>
@@ -129,7 +152,7 @@
 				target="_blank"
 				class="w-1/5 flex items-center btn variant-filled-success rounded-xl font-bold text-2xl"
 			>
-				Login
+				Get Started
 			</a>
 		</div>
 	</div>
@@ -356,7 +379,8 @@
 			<h1 class="text-4xl font-bold leading-[84px]">Meet Mr. RRD</h1>
 			<p class="leading-9">
 				He is a nice guy. He is happy to help your with your any quest. He is an Artifical
-				Intelligence with a mega brain🔥👈👉🔥
+				Intelligence.<span class="font-bold"> Oh oh... Not BORING ChatGPT.</span> But updated version
+				with a mega brain🔥👈👉🔥
 			</p>
 			<button type="button" class="btn bg-gradient-to-br variant-gradient-secondary-tertiary">
 				<span class="text-xl font-bold">Try now</span>
@@ -541,5 +565,10 @@
 	}
 	.white-text {
 		color: red;
+	}
+	.company-name {
+		font-size: 2rem; /* Adjust font size as needed */
+		margin-top: 1rem; /* Add spacing if necessary */
+		font-family: 'CustomFont', sans-serif; /* Use your custom font */
 	}
 </style>
